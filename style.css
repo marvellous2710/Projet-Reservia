@@ -1,0 +1,140 @@
+/* Eléments principaux de la page */
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.cote{
+    display: flex;
+    
+}
+
+/* Header */
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10px;
+    height: 5px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: rgb(0, 153, 255);
+    border-top: 3px solid rgb(0, 153, 255);
+}
+
+/* HEBERGEMENTS A MARSEILLE*/
+
+.hébergements{
+    padding-top: 10px;
+    padding-left: 10px;
+    background: #DCDCDC;
+    border-radius: 20px 20px 20px 20px; 
+    width: 100%;
+    
+}
+
+.hébergements h2{
+    margin: 0;
+}
+
+.image-container{
+    width: auto;
+    height: 130px;
+}
+
+.hébergements img{
+    width: 100%; 
+    height: 100%;  
+    border-radius: 20px 20px 0px 0px; 
+}
+.cadre{
+    display: flex;
+    flex-wrap: wrap;      
+    width: auto;
+    margin:15px;
+    background:chartreuse;
+
+}
+
+.chambre{
+    background:white;
+    width: 30%;
+    height: 40%;
+    border-radius: 20px 20px 20px 20px; 
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+    padding: 5px;  
+}
+
+.texte{
+    margin: 10px;
+}
+
+
+/* <!--  BLOC LES PLUS POPULAIRES--> */
+
+.populaires{
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    background: #DCDCDC;
+    border-radius: 20px 20px 20px 20px; 
+    max-width: 300px;   
+}
+
+.populaires img{
+    width: 140px;
+    height: 130px; 
+    padding-right: 5px;  
+    border-radius: 20px 0px 0px 20px;  
+    float: left; 
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+}
