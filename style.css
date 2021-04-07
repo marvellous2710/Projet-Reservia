@@ -1,5 +1,5 @@
 /* Eléments principaux de la page */
-html{
+html,body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding:0;
@@ -7,8 +7,7 @@ html{
 
 #bloc_page
 {
-    width: 1000px;
-    margin: auto;
+    margin: 45px;
 }
 
 .cote{
@@ -47,24 +46,28 @@ nav a
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
+    padding-top: 55px;
 }
 
 nav a:hover
 {
     color: rgb(0, 153, 255);
-    border-top: 3px solid rgb(0, 153, 255);
+    border-top: 3px solid rgb(0, 153, 255); 
+}
+
+.filtres-1 ul{
+    display: flex;
+    list-style: none;
 }
 
 /* HEBERGEMENTS A MARSEILLE*/
 
 .hébergements{ 
-    padding: 10px;
+    padding: 30px;
     background: #DCDCDC;
     border-radius: 20px 20px 20px 20px; 
-    width: %; 
-    height: 10%;  
-    margin-right: 20px;
-    
+    height: 20%;  
+    margin-right: 20px; 
 }
 
 .hébergements h2{
@@ -73,29 +76,28 @@ nav a:hover
 
 .image-container{
     width: auto;
-    height: 130px;
+    height: 100px;
 }
 
 .hébergements img{
     width: 100%; 
-    height: 80%;  
+    height: 100%;  
     border-radius: 20px 20px 0px 0px;
 }
 .cadre{
     display: flex;
     flex-wrap: wrap;      
     width: auto; 
-    background:chartreuse;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .chambre{
     background:white;
     width: 200px;
     border-radius: 20px; 
-    margin: px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
     padding: 5px;  
+    margin: 10px;
 }
 
 .texte{
@@ -120,7 +122,7 @@ nav a:hover
     margin-bottom: 25px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
     padding: 5px;  
-    height: 20%;
+    height: 100px;
 }
 
 .populaires img{
@@ -132,85 +134,118 @@ nav a:hover
 }
 
 .texte_populaire{
-    line-height: 10px;
+    line-height: 15px;
 }
 
 
 
 /* ACTIVITES A MARSEILLE */
 
-.activité{
+.activités{
     display: flex;
     flex-wrap: wrap;
-    width: auto;
     justify-content: space-between;
 }
 
-#activité_cadre1{ 
-    background: url('reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 325px;
-    border-radius: 20px 20px 20px 20px;      
+.texte_activité{
+    margin-left: 10px;
+    line-height: 1px;
 }
 
-#activité_cadre2{ 
-    background: url('reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 200px;
-    border-radius: 20px 20px 20px 20px;      
+.groupe1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-#activité_cadre3{ 
-    background: url('reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 100px;
-    border-radius: 20px 20px 20px 20px;      
+.groupe2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-#activité_cadre4{ 
-    background: url('reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 325px;
-    border-radius: 20px 20px 20px 20px;      
+.port{
+    background:white;
+    width: 230px;
+    height: 350px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
 }
 
-#activité_cadre5{ 
-    background: url('reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 160px;
-    border-radius: 20px 20px 20px 20px;      
-}
-
-#activité_cadre6{ 
-    background: url('reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-    position:relative;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5); 
-    width: 23%;
-    height: 160px;
-    border-radius: 20px 20px 20px 20px;      
-}
-
-
-
-#activité_description{
-    position: absolute;
-    bottom: 0;
+.port img{
     width: 100%;
-    height: 40px;
-    background-color:white;
-    color: black;
-    border-radius: 0px 0px 20px 20px; 
-    
+    height: 90%;
+    border-radius: 20px 20px 0 0;
+}
+
+.fort{
+    background:white;
+    width: 230px;
+    height: 190px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+}
+
+.fort img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+}
+
+.iles{
+    background:white;
+    width: 230px;
+    height: 130px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+}
+
+.iles img{
+    width: 100%;
+    height: 72%;
+    border-radius: 20px 20px 0 0;
+}
+
+.parc{
+    background:white;
+    width: 230px;
+    height: 350px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+}
+
+.parc img{
+    width: 100%;
+    height: 89%;
+    border-radius: 20px 20px 0 0;
+}
+
+.garde{
+    background:white;
+    width: 230px;
+    height: 160px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+}
+
+.garde img{
+    width: 100%;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
+}
+
+.longchamp{
+    background:white;
+    width: 230px;
+    height: 160px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+}
+
+.longchamp img{
+    width: 100%;
+    height: 75%;
+    border-radius: 20px 20px 0 0;
 }
 
 
