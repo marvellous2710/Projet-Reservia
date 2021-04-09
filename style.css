@@ -51,15 +51,15 @@ nav a
 
 nav a:hover
 {
-    color: rgb(38, 132, 240);
-    border-top: 3px solid rgb(38, 132, 240); 
+    color: #006af3;
+    border-top: 3px solid #006af3; 
 }
 
 /* RECHERCHE */
 
 .recherche button{
     color: white;
-    background: rgb(38, 132, 240);
+    background: #006af3;
     border-radius: 0 10px 10px 0;
     padding: 10px;
     border: none;
@@ -80,6 +80,15 @@ nav a:hover
 
 
 /* FILTRES */
+
+.filtre-{
+    display: flex;
+}
+
+.filtre- p{
+    padding-top: 10px;
+}
+
 .filtres-1 ul{
     display: flex;
     list-style: none;
@@ -95,9 +104,21 @@ nav a:hover
 .filtres-1 li i{
     color: rgb(38, 132, 240);
     background: rgb(234, 249, 255);
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 10px;  
+    margin-right: 5px;
 }
+
+.info i{
+    color: #006af3;
+    border: 1px rgb(240, 240, 240, 0.678) solid;    
+    border-radius: 20px;
+    padding: 10px; 
+    margin: 5px; 
+    height: 5px;
+    font-size: 10px;
+}
+
 
 /* HEBERGEMENTS A MARSEILLE*/
 
@@ -144,17 +165,35 @@ nav a:hover
     line-height: 1px;
 }
 
+div .notation{
+    margin-top: -5px;
+}
 
-/* <!--  BLOC LES PLUS POPULAIRES--> */
+.notation i{
+    color: #006af3;
+    font-size: 10px;
+}
+
+.star-grey i{
+    color: #a5a0a0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* <!-- LES PLUS POPULAIRES--> */
 
 .populaires{  
     padding: 10px;
     background: rgba(240, 240, 240, 0.678);
     border-radius: 20px 20px 20px 20px; 
-    max-width: 500px;   
+    max-width: 500px;  
 }
 
 .cadre_populaire{
+    display: flex;
     background:white;
     width: 300px;
     border-radius: 20px; 
@@ -169,11 +208,11 @@ nav a:hover
     height: 100px; 
     padding-right: 5px;  
     border-radius: 20px 0px 0px 20px;
-    float: left; 
+     
 }
 
 .texte_populaire{
-    line-height: 15px;
+    line-height: 12px;
 }
 
 
@@ -317,21 +356,174 @@ nav a:hover
 
 /* MEDIA */
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 1000px)
 {
-    #bloc_page
+ 
+
+    .filtres-1{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+
+    /* POPULAIRES */
+    .populaires
     {
+        width: 100%;
+    }
+
+    .cadre_populaire{
         width: auto;
     }
-    nav
-    {
-        width: auto;
-        text-align: left;
-    }
+
+    /* HEBERGEMENTS */
+
     .cote{
         display: flex;
         flex-wrap: wrap-reverse;
     }
+
+
+
+    /* ACTIVITES A MARSEILLE */
+
+
+
+    /* FOOTER */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
+/* IPHONE 8 */
+@media all and (max-width: 550px)
+{
+    .cote{
+        width: 100%;
+    }
+   /* NAV */
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+   nav ul
+   {
+       flex-wrap: wrap-reverse; 
+   }
+
+   nav a:hover
+{
+    color: #006af3;
+    border-top: 3px solid #006af3; 
+}
+
+
+   .filtres-1 ul{
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+
+ 
+   .recherche button{
+       padding: 20px;
+       width: 50px;
+       border-radius: 10px;
+   }
+
+   .recherche i{
+       padding: 20px;
+   }
+
+   .recherche input{
+       padding: 16px;
+   }
+
+   /* POPULAIRES */
+
+    .populaires{
+        width: 100%;
+        padding-right: 30px;
+        border-radius: 0;
+    }
+
+    .cadre_populaire{
+        height: 140px;
+        width: 270px;
+    }
+
+    .cadre_populaire img{
+        height: 100%;
+        width: 110px;
+    }
+
+
+   /* HEBERGEMENTS */
+
+   .hébergements{
+       background: red;
+       width: 100%;
+       border-radius: 0;
+   }
+   .chambre{
+       width: 260px;
+   }
+
+   /* ACTIVITES */
+   
+   .port{
+       height: 165px;
+       width: 270px;
+       padding-bottom: 15px;
+       margin-bottom: 20px;
+   }
+
+
+   .groupe1 .fort{
+        height: 165px;
+        width: 270px;
+        margin-bottom: 20px;
+   }
+
+   .groupe1 .iles{
+        height: 165px;
+        width: 270px;
+        margin-bottom: 20px;
+}
+
+    .groupe1 .iles img{
+        height: 80%;
+    }
+
+    .parc{
+        height: 165px;
+        width: 270px; 
+        padding-bottom: 15px; 
+        margin-bottom: 20px;  
+    }
+
+    .groupe2 .garde{
+        height: 165px;
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    .groupe2 .garde img{
+        height: 80%;
+    }
+
+    .groupe2 .longchamp{
+        height: 165px;
+        width: 270px;
+    }
+
+    .groupe2 .longchamp img{
+        height: 80%;
+    }
+
+}
