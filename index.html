@@ -11,202 +11,225 @@
 </head>
 
 <body>
-    <div id="bloc_page">
-        <header>
-            <div id="titre_principal">
-                <div id="logo">
-                    <img src="reservia/images/logo/Reservia@3x.png" alt="Logo de Reservia" width="100px"
-                        height="50px" />
-                </div>
-            </div>
+
+    <header>
+        <div id="logo">
+            <img src="reservia/images/logo/Reservia@3x.png" alt="Logo de Reservia" width="100px" height="50px" />
+        </div>
+        <!-- MODIF NAVIGATION -->
+        <div class="menu">
             <nav>
                 <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
-        </header>
+            <p class="inscription">
+                <a href="#">S'inscrire</a>
+            </p>
 
+        </div>
+
+        <!-- FIN MODIF NAV -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <div class="trouvez">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <div class="recherche">
-            <form>
-                <i class="fas fa-map-marker-alt"></i><input type="search" id="maRecherche" name="q"
-                    placeholder="Marseille, France"><button>Rechercher</button>
-            </form>
+        <div class="champ-recherche">
+            <span class="icon-map"><i class="fas fa-map-marker-alt"></i></span>
+            <input type="search" id="maRecherche" name="q" placeholder="Marseille, France">
+            <button class="icon-loupe"> 
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="button-button">Rechercher</button>
         </div>
+
         <div class="filtre-">
-        <p>Filtres</p>
-        <div class="filtres-1">
-            <ul>  
-                <li><a><i class="fas fa-money-bill-wave"></i>Economique</a></li>
-                <li><a><i class="fas fa-child"></i>Familial</a></li>
-                <li><a><i class="fas fa-heart"></i>Romantique</a></li>
-                <li><a><i class="fas fa-dog"></i>Animaux autorisés</a></li>
-            </ul>
+            <p>Filtres</p>
+            <div class="filtres-1">
+                <ul>
+                    <li><a><i class="fas fa-money-bill-wave"></i>Economique</a></li>
+                    <li><a><i class="fas fa-child"></i>Familial</a></li>
+                    <li><a><i class="fas fa-heart"></i>Romantique</a></li>
+                    <li><a><i class="fas fa-dog"></i>Animaux autorisés</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
         <div class="info">
             <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+    </div>
 
 
-        <!-- BLOC HEBERGEMENTS A MARSEILLE -->
-        <div class="cote">
-            <div class="hébergements">
+    <!-- BLOC HEBERGEMENTS A MARSEILLE -->
+    <div class="cote">
+        <div class="hébergements">
 
-                <h2>Hébergements à Marseille</h2>
-                <div class="cadre">
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="marcusloke.html">
-                                <img src="reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                    alt="hébergement marcus loke"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Auberge la Cannebière</p>
-                            <p>Nuit à partir de <em>25€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
-
-                            </div>
-                        </div>
-
+            <h2>Hébergements à Marseille</h2>
+            <div class="cadre">
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="marcusloke.html">
+                            <img src="reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="hébergement marcus loke"></a>
                     </div>
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="fredkleber.html">
-                                <img src="reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                    alt="hébergement fred kleber"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Hôtel du port</p>
-                            <p>Nuit à partir de <em>52€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
+                    <div class="texte">
+                        <p>Auberge la Cannebière</p>
+                        <p>Nuit à partir de <em>25€</em></p>
+                        <div class="notation">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
 
-                        </div>
-                    </div>
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="reisetopia.html">
-                                <img src="reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                                    alt="hébergement reisetopia"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Hôtel les mouettes</p>
-                            <p>Nuit à partir de <em>76€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="anniesprat.html">
-                                <img src="reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                    alt="hébergement anniesprat"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Hôtel de la mer</p>
-                            <p>Nuit à partir de <em>46€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="nicatelee.html">
-                                <img src="reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                    alt="hébergement nicatelee"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Auberge Le Panier</p>
-                            <p>Nuit à partir de <em>23€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chambre">
-                        <div class="image-container">
-                            <a href="febrianzakaria.html">
-                                <img src="reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                                    alt="hébergement febrianzakaria"></a>
-                        </div>
-                        <div class="texte">
-                            <p>Hôtel chez Amina</p>
-                            <p>Nuit à partir de <em>96€</em></p>
-                            <div class="notation">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
                         </div>
                     </div>
 
                 </div>
-                <p>Afficher plus</p>
-            </div>
-
-            <!--  LES PLUS POPULAIRES-->
-            <div class="populaires">
-                <div classe="logocourbe">
-                    <h2>Les plus populaires</h2>
-                </div>
-                <div class="cadre_populaire">
-                    <div class="image_populaire">
-                    <a href="emileguillemot.html">
-                        <img src="reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="hébergement emile guillemot" title="Hôtel le soleil du matin"></a>
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="fredkleber.html">
+                            <img src="reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                alt="hébergement fred kleber"></a>
+                    </div>
+                    <div class="texte">
+                        <p>Hôtel du port</p>
+                        <p>Nuit à partir de <em>52€</em></p>
+                        <div class="notation">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                    <div class="texte_populaire">
-                        <p>Hôtel Le soleil du matin</p>
-                        <p>Nuit à partir de <em>128€</em></p>
+
+                    </div>
+                </div>
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="reisetopia.html">
+                            <img src="reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                alt="hébergement reisetopia"></a>
+                    </div>
+                    <div class="texte">
+                        <p>Hôtel les mouettes</p>
+                        <p>Nuit à partir de <em>76€</em></p>
+                        <div class="notation">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="anniesprat.html">
+                            <img src="reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                alt="hébergement anniesprat"></a>
+                    </div>
+                    <div class="texte">
+                        <p>Hôtel de la mer</p>
+                        <p>Nuit à partir de <em>46€</em></p>
+                        <div class="notation">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span
+                                class="star-grey"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="nicatelee.html">
+                            <img src="reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                alt="hébergement nicatelee"></a>
+                    </div>
+                    <div class="texte">
+                        <p>Auberge Le Panier</p>
+                        <p>Nuit à partir de <em>23€</em></p>
+                        <div class="notation">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chambre">
+                    <div class="image-container">
+                        <a href="febrianzakaria.html">
+                            <img src="reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                alt="hébergement febrianzakaria"></a>
+                    </div>
+                    <div class="texte">
+                        <p>Hôtel chez Amina</p>
+                        <p>Nuit à partir de <em>96€</em></p>
                         <div class="notation">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                     </div>
                 </div>
-                <div class="cadre_populaire">
-                    <a href="creative.html">
-                        <img src="reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                            alt="hébergement creative" title="chambre d'hotes"></a>
-                    <div class="texte_populaire">
-                        <p>Au coeur de l'eau Chambres d'hôtes</p>
-                        <p>Nuit à partir de <em>71€</em></p>
-                        <div class="notation">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
-                        </div>
-                    </div>
 
+            </div>
+            <div class="afficherplus">
+                <a href="#">Afficher plus</a>
+            </div>
+
+        </div>
+
+        <!--  LES PLUS POPULAIRES-->
+        <div class="populaires">
+            <div classe="logocourbe">
+                <h2>Les plus populaires</h2>
+            </div>
+            <div class="cadre_populaire">
+                <div class="image_populaire">
+                    <a href="emileguillemot.html">
+                        <img src="reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="hébergement emile guillemot" title="Hôtel le soleil du matin"></a>
                 </div>
-                <div class="cadre_populaire">
-                    <a href="febrianz.html">
-                        <img src="reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="hébergement Febrian zakaria" title="hotel tout bleu et blanc"></a>
-                    <div class="texte_populaire">
-                        <p>Hôtel Tout bleu et Blanc</p>
-                        <p>Nuit à partir de <em>68€</em></p>
-                        <div class="notation">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
-                        </div>
+                <div class="texte_populaire">
+                    <p>Hôtel Le soleil du matin</p>
+                    <p>Nuit à partir de <em>128€</em></p>
+                    <div class="notation">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="cadre_populaire">
+                <a href="creative.html">
+                    <img src="reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                        alt="hébergement creative" title="chambre d'hotes"></a>
+                <div class="texte_populaire">
+                    <p>Au coeur de l'eau Chambres d'hôtes</p>
+                    <p>Nuit à partir de <em>71€</em></p>
+                    <div class="notation">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cadre_populaire">
+                <a href="febrianz.html">
+                    <img src="reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                        alt="hébergement Febrian zakaria" title="hotel tout bleu et blanc"></a>
+                <div class="texte_populaire">
+                    <p>Hôtel Tout bleu et Blanc</p>
+                    <p>Nuit à partir de <em>68€</em></p>
+                    <div class="notation">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><span class="star-grey"><i class="fas fa-star"></i></span>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- ACTIVITE A MARSEILLE -->
+    <!-- ACTIVITE A MARSEILLE -->
+    <aside>
         <h2>Activités à Marseille</h2>
 
         <div class="activités">
@@ -269,8 +292,8 @@
                 </div>
             </div>
         </div>
+    </aside>
 
-    </div>
 
 
     <!-- FOOTER -->
@@ -301,6 +324,7 @@
         </div>
 
     </div>
+    
 </body>
 
 </html

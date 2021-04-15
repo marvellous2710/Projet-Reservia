@@ -5,27 +5,32 @@ html,body{
     padding:0;
 }
 
-#bloc_page
-{
-    margin: 45px;
-}
-
-.cote{
-    display: flex;  
-    justify-content: space-around;   
-}
-
 /* Header */
 header
 {
+    margin: 20px;
     display: flex;
     justify-content: space-between;
 }
 
+.trouvez{
+    margin: 20px;
+}
 .logo{
     width: 10px;
     height: 5px;
 }
+
+/* MODIF NAV */
+.menu{
+    
+    top: 0;
+    display: flex;
+    
+    
+}
+/* FIN MODIF NAV */
+
 
 /* Navigation */
 
@@ -46,7 +51,7 @@ nav a
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
-    padding-top: 55px;
+    padding-top: 20px;
 }
 
 nav a:hover
@@ -57,25 +62,32 @@ nav a:hover
 
 /* RECHERCHE */
 
-.recherche button{
-    color: white;
-    background: #006af3;
-    border-radius: 0 10px 10px 0;
-    padding: 10px;
-    border: none;
-    width: 100px;
+.champ-recherche{
+    display: flex;
 }
 
-.recherche i{
+.icon-map{
     background: rgb(240, 240, 240, 0.678);
     border-radius: 10px 0 0 10px;
-    padding: 10px;
-    padding-bottom: 11px;
-    padding-top: 7px;
+    padding: 10px
 }
 
-.recherche input{
+.champ-recherche input{
     padding: 7px;    
+    border: 1px rgb(240, 240, 240, 0.678) solid;
+    padding: 9px;
+}
+
+.icon-loupe{
+    display: none;
+}
+
+.button-button{
+    color: white;
+    background: #006af3;
+    border-radius: 0 10px 10px 0;  
+    border: none;
+    width: 100px;
 }
 
 
@@ -122,12 +134,19 @@ nav a:hover
 
 /* HEBERGEMENTS A MARSEILLE*/
 
+.cote{
+    display: flex;  
+    justify-content: space-around;   
+}
+
+
 .hébergements{ 
     padding: 30px;
     background: rgba(240, 240, 240, 0.678);
     border-radius: 20px 20px 20px 20px; 
     height: 20%;  
-    margin-right: 20px; 
+    margin-right: 20px;
+    margin-left: 20px; 
 }
 
 .hébergements h2{
@@ -180,7 +199,10 @@ div .notation{
     margin: 0;
 }
 
-
+.afficherplus a{
+    text-decoration: none;
+    color: #181818;
+}
 
 
 /* <!-- LES PLUS POPULAIRES--> */
@@ -190,6 +212,7 @@ div .notation{
     background: rgba(240, 240, 240, 0.678);
     border-radius: 20px 20px 20px 20px; 
     max-width: 500px;  
+    margin-right: 20px;
 }
 
 .cadre_populaire{
@@ -217,7 +240,10 @@ div .notation{
 
 
 
-/* ACTIVITES A MARSEILLE */
+/*  ASIDE /ACTIVITES A MARSEILLE */
+aside{
+    margin: 20px;
+}
 
 .activités{
     display: flex;
@@ -339,6 +365,7 @@ div .notation{
 .footer ul{   
     list-style-type: none;
     min-height: 25px;
+    padding: 0;
 }
 
 .footer li{   
@@ -358,8 +385,6 @@ div .notation{
 
 @media all and (max-width: 1000px)
 {
- 
-
     .filtres-1{
         display: flex;
         flex-wrap: wrap;
@@ -411,49 +436,90 @@ div .notation{
         flex-wrap: wrap;
     }
   
-   nav ul
-   {
-       flex-wrap: wrap-reverse; 
+    
+
+   nav li{
+    margin: 20px;
+    border-bottom: 3px solid rgb(240, 240, 240, 0.678);
+   }
+   
+   nav ul{
+       border-bottom: 4px;
    }
 
    nav a:hover
-{
+    {
     color: #006af3;
-    border-top: 3px solid #006af3; 
-}
+    border-top: none;
+    border-bottom: 3px solid #006af3; 
+    font-size: 20px;
+    
+    }
+    
 
+    /* RECHERCHE */
 
-   .filtres-1 ul{
-       flex-wrap: wrap;
-       flex-direction: row;
-       justify-content: space-around;
-   }
+    .icon-map{
+        width: 20px;
+    }
 
+    .icon-map i{
+        padding-left: 5px;
+        font-size: 20px;
+    }
+
+    .champ-recherche input{
+        width: 75%;
+    }
+    .icon-loupe{
+        display: flex;
+        background: #006af3;
+        color:white;
+        border: none;
+        width: 40px;
+        border-radius: 0 10px 10px 0;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .icon-loupe i{
+        font-size: 20px;
+    }
+
+   
+  
+    .button-button{
+        display: none;
+    }
  
-   .recherche button{
-       padding: 20px;
-       width: 50px;
-       border-radius: 10px;
-   }
+     
+   
+    /* FILTRES */
+   .filtre-{
+    display: flex;
+    flex-wrap: wrap;
+    }
 
-   .recherche i{
-       padding: 20px;
-   }
+    .filtres-1 li{
+    margin: 5px;    
+    }
 
-   .recherche input{
-       padding: 16px;
-   }
+    .filtres-1 ul{
+   flex-wrap: wrap;
+   padding-left: 0;
+    }
 
    /* POPULAIRES */
 
     .populaires{
         width: 100%;
-        padding-right: 30px;
+        padding-left: 40px;
         border-radius: 0;
+        margin: 0;
     }
 
     .cadre_populaire{
-        height: 140px;
+        height: 110px;
         width: 270px;
     }
 
@@ -466,19 +532,23 @@ div .notation{
    /* HEBERGEMENTS */
 
    .hébergements{
-       background: red;
+       background: white;
        width: 100%;
        border-radius: 0;
    }
    .chambre{
-       width: 260px;
+       width: 290px;
    }
 
    /* ACTIVITES */
    
+   aside{
+        margin-left: 30px;
+   }
+
    .port{
        height: 165px;
-       width: 270px;
+       width: 290px;
        padding-bottom: 15px;
        margin-bottom: 20px;
    }
@@ -486,13 +556,13 @@ div .notation{
 
    .groupe1 .fort{
         height: 165px;
-        width: 270px;
+        width: 290px;
         margin-bottom: 20px;
    }
 
    .groupe1 .iles{
         height: 165px;
-        width: 270px;
+        width: 290px;
         margin-bottom: 20px;
 }
 
@@ -502,14 +572,14 @@ div .notation{
 
     .parc{
         height: 165px;
-        width: 270px; 
+        width: 290px; 
         padding-bottom: 15px; 
         margin-bottom: 20px;  
     }
 
     .groupe2 .garde{
         height: 165px;
-        width: 270px;
+        width: 290px;
         margin-bottom: 20px;
     }
 
@@ -519,7 +589,7 @@ div .notation{
 
     .groupe2 .longchamp{
         height: 165px;
-        width: 270px;
+        width: 290px;
     }
 
     .groupe2 .longchamp img{
